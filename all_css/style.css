@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.home{
+    position: relative;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100%;
+    animation: go 2s forwards;
+    animation-delay: 10s; 
+    
+}
+
+@keyframes go{
+    /* 0%{
+        width: 100%;
+        height: 100%;
+    } */
+    100%{
+        width: 0%;
+        height: 0%;
+        display: none;
+        /* transform: translateY(-20%); */
+        transform: translateY(-100%);
+    }
+}
+
+.home2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* transform: translateY(100%); */
+    animation: come 2s forwards;
+    animation-delay: 10s;
+}
+@keyframes come{
+    0%{
+        /* width: 0%;
+        height: 0%;
+        opacity: 0; */
+        transform: translateY(100%);
+    }
+    100%{
+        /* width: 100%;
+        height: 100%;
+        opacity: 1; */
+        transform: translateY(0%);
+    }
+}
+
+.container{
+    position: absolute;
+    
+}
+.dialog-birthday_message{
+    position: absolute;
+}
+.pic{
+    position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translate(-50%);
+z-index: 71;
+    width: 100%;
+    height: 100%;
+
+}
+.pic2{
+    position: relative;
+bottom: 10px;
+left: 50%;
+transform: translate(-50%);
+    width: 150%;
+    height: 500px;
+}
+.pic2 img{
+position: absolute;
+bottom: -30%;
+width: 100%;
+height: 100%;
+object-fit: fill;
+}
+.h1{
+    color: black;
+}
+.pic img{
+    position: absolute;
+    bottom: -5%;
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+}
+.bgpic{
+    position: absolute;
+    top:  -3%;
+    width: 100%;
+    height: 70%;
+    z-index: 100000822929299292;
+}
+
+.bgpic img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+#name{
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+

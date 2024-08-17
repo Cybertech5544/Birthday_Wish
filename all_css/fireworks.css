@@ -1,0 +1,24 @@
+body {
+    /* background-color: rgb(133, 56, 56);
+    display:flex;
+        align-items: center;
+        justify-content: center;
+    margin:0;
+    min-height:100vh;
+    min-width:100vw;
+    overflow: hidden; */
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout:none;
+}
+
+#canvas {
+    mix-blend-mode: lighten;
+    z-index: 30;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0);
+    height:100%;
+    width:100%;
+}

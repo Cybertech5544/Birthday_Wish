@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Wish</title>
+  <link rel="stylesheet" href="all_css/star.css">
+  <link rel="stylesheet" type="text/css" href="all_css/fireworks.css" />
+  <link rel="stylesheet" href="all_css/clock.css">
+  <link rel="stylesheet" href="all_css/style.css">
+  <link rel="stylesheet" href="all_css/balloon.css">
+  <link rel="stylesheet" href="all_css/floating.css">
+  <!-- <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css"> -->
+
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/darkly/bootstrap.min.css"> -->
+</head>
+
+<body>
+  <audio id="audioElement" autoplay>
+    <source src="audios/bell.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+<!--   
+  <audio loop >
+    <source src="6QKGLCH-fireworks.mp3" type="audio/mp3">
+  </audio> -->
+  
+  
+  <!-- <audio id="myAudio" loop autoplay> -->
+    <!-- <source src="A Sweet Wish - Birthday Song.mp3" type="audio/ogg">-->
+    <!-- <source src="6QKGLCH-fireworks.mp3" type="audio/mp3"> -->
+    
+  <!-- </audio> -->
+  <section class="home">
+    
+    <div class="bg-animation">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="stars4"></div>
+    </div>
+    
+    <canvas id="canvas">
+      
+      
+      
+    </canvas>
+    <canvas id="birthday"></canvas>
+
+    <div class="clock_container">
+      <div class="balloon white">
+        <div class="star-red"></div>
+        <div class="face">
+          <div class="eye"></div>
+          <div class="mouth happy"></div>
+        </div>
+        <div class="triangle"></div>
+        <div class="string"></div>
+      </div>
+
+      <div class="balloon red">
+        <div class="star"></div>
+        <div class="face">
+          <div class="eye"></div>
+          <div class="mouth happy"></div>
+        </div>
+        <div class="triangle"></div>
+        <div class="string"></div>
+      </div>
+
+      <div class="balloon blue">
+        <div class="star"></div>
+        <div class="face">
+          <div class="eye"></div>
+          <div class="mouth happy"></div>
+        </div>
+        <div class="triangle"></div>
+        <div class="string"></div>
+      </div>
+      <div id="timer"></div>
+      <h1>HAPPY BIRTH DAY</h1>
+    </div>
+
+  </section>
+
+
+
+  <section class="home2">
+<div class="bgpic">
+  <img src="images/vecteezy_balloon-garland-decoration-elements_16326754.png" alt="">
+</div>
+    
+
+    <div id="balloon-container">
+
+    </div>
+    <!-- <main class="cd__main"> -->
+      <!-- Start DEMO HTML (Use the following code into your project)-->
+      <!-- END EDMO HTML (Happy Coding!)-->
+      
+    <!-- </main> -->
+    <div class="container">
+      <!-- 
+        
+      <button onclick="stopConfetti();" class="btn btn-info">Stop</button> -->
+      
+      <!-- <button onclick="startConfetti();" class="btn btn-danger">Start</button> -->
+      <!-- <button onclick="toggleConfetti();" class="btn btn-warning">Toggle</button> -->
+
+    </div>
+
+    
+      
+
+
+    <div class="dialog-birthday_message">
+      <div id="birthday_container" class="birthday_container">
+      <div class="balloons">
+        <div class="ballu">
+
+          <div class="balloonn"><span>H</span></div>
+          <div class="balloonn"><span>A</span></div>
+          <div class="balloonn"><span>P</span></div>
+          <div class="balloonn"><span>P</span></div>
+          <div class="balloonn"><span>Y</span></div>
+        </div>
+        <div class="ballu">
+
+          
+          <div class="balloonn"><span>B</span></div>
+          <div class="balloonn"><span>I</span></div>
+          <div class="balloonn"><span>R</span></div>
+          <div class="balloonn"><span>T</span></div>
+          <div class="balloonn"><span>H</span></div>
+          <div class="balloonn"><span>D</span></div>
+          <div class="balloonn"><span>A</span></div>
+          <div class="balloonn"><span>Y</span></div>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="pic">
+      <img id="name" src="images/2 (1) (1).png" alt="">
+      <img src="images/12628896705 (1) (1).png" alt="">
+      <!-- <img class="bi" src="images/vecteezy_happy-birthday-hd-gold_28284599.png" alt=""> -->
+      
+    </div>
+    <div class="pic2">
+      <!-- <img src="images/12628896705 (1) (1).png" alt=""> -->
+      <img  src="images/vecteezy_happy-birthday-hd-gold_28284599.png" alt="">
+      
+    </div>
+
+    </div>
+
+
+
+    <!--$%adsense%$-->
+
+
+  </section>
+
+
+  <script>
+    // Get the audio element
+    const audio = document.getElementById('audioElement');
+  
+    // Function to stop audio after 10 seconds
+    function stopAudio() {
+      setTimeout(() => {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the beginning
+      }, 10000); // 10,000 milliseconds = 10 seconds
+    }
+  
+    // Stop the audio after 10 seconds on page load
+    // window.onload = stopAudio;
+  </script>
+
+  <script src="all_js/confetti.js"></script>
+  <script src="all_js/clock.js"></script>
+  <script src="all_js/floating.js"></script>
+  <script defer type="text/javascript" src="all_js/fireworks.js"></script>
+
+<!-- 
+  <script>
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+
+
+        ga('create', 'UA-46156385-1', 'cssscript.com');
+
+        ga('send', 'pageview');
+
+
+
+    </script> -->
+
+<!-- <script>
+  // Get all audio elements with the class name 'myAudio'
+  var audioElements = document.getElementsByClassName('myAudio');
+
+  // Loop through each audio element and play/pause them
+  Array.from(audioElements).forEach(function(audio) {
+      // Play the audio
+      audio.play();
+
+      // Stop the audio after 40 seconds
+      setTimeout(function() {
+          audio.pause();
+          audio.currentTime = 0; // Reset the audio to the beginning
+      }, 10000); // 40,000 milliseconds = 40 seconds
+  });
+</script> -->
+
+</body>
+
+</html>
